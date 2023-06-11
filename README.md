@@ -4,7 +4,7 @@
   
   
 # Ürün ile İlgili Bilgiler
- ## Takım Elemeanları
+ ## Takım Elemanları
   Mert Karahan - Product Owner  
   Mert Eren Tavan - Scrum Master   
   Melih Güven - Developer  
