@@ -36,7 +36,7 @@
 
 ## Product Backlog URL
 
-- https://trello.com/b/hEJyotXD/kanban-template
+- https://trello.com/b/hEJyotXD/petpas-f-20-kanban
 
 
 
