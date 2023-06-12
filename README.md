@@ -38,6 +38,9 @@
 
 - https://trello.com/b/hEJyotXD/petpas-f-20-kanban
 
+# Figma Uygulama Görseli
+<img width="577" alt="Screenshot 2023-06-12 at 13 07 22" src="https://github.com/mertkarahan955/PetPas/assets/112320373/e8617953-a577-4cc2-b04f-5fd3efb197c7">
+
 
 
   
