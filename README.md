@@ -7,7 +7,7 @@
  ## Takım Elemanları
   Mert Karahan - Product Owner  
   Mert Eren Tavan - Scrum Master   
-  Melih Güven - Developer  
+  Melih Güven - Developer 
   Beyza Nur Eker- Developer  
   Arif Yardım - Developer
 
@@ -39,7 +39,9 @@
 - https://trello.com/b/hEJyotXD/petpas-f-20-kanban
 
 # Figma Uygulama Görseli
-<img width="577" alt="Screenshot 2023-06-12 at 13 07 22" src="https://github.com/mertkarahan955/PetPas/assets/112320373/e8617953-a577-4cc2-b04f-5fd3efb197c7">
+
+ <img width="955" alt="Screenshot 2023-06-13 at 12 14 05" src="https://github.com/mertkarahan955/PetPas/assets/112320373/17348830-317e-4ea4-9b5a-2db754c43b79">
+
 
 
 
