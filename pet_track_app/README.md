@@ -1,3 +1,3 @@
 # pet_track_app
 
-A new Flutter project.
+Veteriner ve hayvan sahibi takip uygulaması.

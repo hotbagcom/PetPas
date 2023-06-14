@@ -12,8 +12,9 @@ class UserProfileView extends StatefulWidget {
 class _ProfileViewState extends State<UserProfileView> {
   @override
   Widget build(BuildContext context) {
-    var pp = 'pet_track_app/lib/assets/odin_profile.png';
-    var logo = 'pet_track_app/lib/assets/petpas_logo.png';
+    var pp =
+        '/Users/mertkarahan/Desktop/pet_track_app/pet_track_app/lib/assets/odin_profilfoto.png';
+
     var user = "Mert Karahan";
     return Scaffold(
       appBar: AppBar(
@@ -69,10 +70,10 @@ class _ProfileViewState extends State<UserProfileView> {
               height: 500,
               width: 380,
               child: Column(children: [
-                Row(
+                const Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: Column(
                         children: [],
                       ),

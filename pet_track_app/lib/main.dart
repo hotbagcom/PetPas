@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:pet_track_app/view/profile_view.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const PetPasApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class PetPasApp extends StatelessWidget {
+  const PetPasApp({super.key});
 
   @override
   Widget build(BuildContext context) {
