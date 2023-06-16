@@ -19,4 +19,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-  - /Users/mertkarahan/Desktop/pet_track_app/pet_track_app/lib/assets/odin_profilfoto.png
+  - lib/assets/odin_pp.png

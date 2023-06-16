@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/component.dart';
+import '../product/product.dart';
 
 class UserProfileView extends StatefulWidget {
   const UserProfileView({super.key});
@@ -12,14 +13,13 @@ class UserProfileView extends StatefulWidget {
 class _ProfileViewState extends State<UserProfileView> {
   @override
   Widget build(BuildContext context) {
-    var pp =
-        '/Users/mertkarahan/Desktop/pet_track_app/pet_track_app/lib/assets/odin_profilfoto.png';
+    var pp = 'lib/assets/odin_pp.png';
 
     var user = "Mert Karahan";
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: const Color.fromARGB(255, 248, 248, 248),
+        backgroundColor: MainColors().backGroundColor,
         actions: [
           IconButton(
             onPressed: () {},
@@ -31,7 +31,7 @@ class _ProfileViewState extends State<UserProfileView> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Icons.navigate_before_rounded,
                 color: Colors.black,
               ),
@@ -51,45 +51,26 @@ class _ProfileViewState extends State<UserProfileView> {
               pp: pp,
               text: user,
             )),
-            const Padding(
+            Padding(
               padding: Paddings.profilePageColumnPadding,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  ScrollButtonCard(text: "Hayvanlarım"),
+                  ScrollButtonCard(
+                    text: "Hayvanlarım",
+                    onPressed: () {},
+                  ),
                   ScrollButtonCard(
                     text: "Gelecek Aşılar",
+                    onPressed: () {},
                   )
                 ],
               ),
             ),
-            Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  color: Color.fromRGBO(34, 172, 202, 100)),
-              height: 500,
-              width: 380,
-              child: Column(children: [
-                const Row(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(8.0),
-                      child: Column(
-                        children: [],
-                      ),
-                    ),
-                  ],
-                )
-              ]),
-            )
+            const ProfileContainerList()
           ],
         ),
       ),
     );
   }
-}
-
-class Paddings {
-  static const profilePagePadding = EdgeInsets.symmetric(horizontal: 20);
-  static const profilePageColumnPadding = EdgeInsets.all(20);
 }

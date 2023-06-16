@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_track_app/product/product.dart';
 
 class ProfileDrawerWidget extends StatelessWidget {
   const ProfileDrawerWidget({
@@ -11,15 +12,15 @@ class ProfileDrawerWidget extends StatelessWidget {
       child: ListView(
         children: [
           const DrawerHeader(
+            decoration: BoxDecoration(
+              color: Colors.blue,
+            ),
             child: Text(
               'Drawer Başlik',
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.white,
               ),
-            ),
-            decoration: BoxDecoration(
-              color: Colors.blue,
             ),
           ),
           ListTile(
@@ -40,15 +41,18 @@ class ProfileDrawerWidget extends StatelessWidget {
   }
 }
 
+// Kullanıcı profili CardList'i yöneten buton
 class ScrollButtonCard extends StatelessWidget {
   final String text;
   final double fontSize;
   final Color? color;
   final Color? textColor;
+  final VoidCallback onPressed;
 
   const ScrollButtonCard({
     Key? key,
     required this.text,
+    required this.onPressed,
     this.fontSize = 17,
     this.color,
     this.textColor = Colors.white,
@@ -56,59 +60,31 @@ class ScrollButtonCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
+    return InkWell(
+      onTap: onPressed,
+      child: Container(
+        decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: color ?? Color.fromRGBO(110, 22, 124, 100)),
-      height: 49,
-      width: 132,
-      child: Center(
-        child: CustomCard(
-          text: text,
-          fontSize: fontSize,
-          color: color,
-          textColor: textColor,
+          color: color ?? const Color.fromRGBO(110, 22, 124, 100),
         ),
-      ),
-    );
-  }
-}
-
-class CustomCard extends StatelessWidget {
-  final String text;
-  final double fontSize;
-  final Color? color;
-  final Color? textColor;
-
-  const CustomCard({
-    Key? key,
-    required this.text,
-    this.fontSize = 20,
-    this.color,
-    this.textColor,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: color ?? Color.fromRGBO(110, 22, 124, 100)),
-      child: Center(
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: fontSize,
-            color: textColor,
+        height: 49,
+        width: 132,
+        child: Center(
+          child: Text(
+            text,
+            style: TextStyle(
+              fontSize: fontSize,
+              color: textColor,
+            ),
+            textAlign: TextAlign.center,
           ),
-          textAlign: TextAlign.center,
         ),
       ),
     );
   }
 }
 
-// profildeki hayvanlarım ve gelecek aşıları gösteren kart
+// Kullanıcı Profili PP ve Ad Soyad
 class ProfileCard extends StatelessWidget {
   const ProfileCard({
     Key? key,
@@ -122,10 +98,11 @@ class ProfileCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color.fromRGBO(248, 248, 248, 100),
+      color: MainColors().backGroundColor,
       elevation: 0,
       child: Column(
         children: [
+          // ignore: unnecessary_null_comparison
           if (pp != null)
             Image.asset(pp)
           else
@@ -146,7 +123,7 @@ class ProfileCard extends StatelessWidget {
             padding: const EdgeInsets.only(top: 10),
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -173,6 +150,36 @@ class ProfilePetImageButton extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Image.asset(pp),
+    );
+  }
+}
+
+// Kullanıcı profili Hayvan ve Gelecek etkinlikleri içerek olan liste
+class ProfileContainerList extends StatelessWidget {
+  const ProfileContainerList({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(50),
+          color: MainColors().primaryColor),
+      height: 500,
+      width: 380,
+      child: const Column(children: [
+        Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Column(
+                children: [],
+              ),
+            ),
+          ],
+        )
+      ]),
     );
   }
 }
