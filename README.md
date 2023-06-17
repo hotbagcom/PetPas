@@ -48,18 +48,30 @@
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 100
 
-- **Puan tamamlama mantığı:** Üç sprint için hesaplanan Backlog puanı 300'dür. Toplamda 3 sprint olduğundan ötürü her sprint için puan 100 belirlenmiştir.
+- **Puan tamamlama mantığı:** Üç sprint için hesaplanan Backlog puanı 320'dir. İlk sprint için 100 puanın yeterli olacağını hesapladık.
 
 - **Daily Scrum:** Yaptığımız Daily Scrum toplantılarını "Whatsapp ve Discord" üzerinden gerçekleştirdik.
-
-
+    [
+  (https://github.com/mertkarahan955/PetPas/tree/main/sprin_gorseller)
+]
 
 
 - **Sprint board update:**
+## Sprint Board Ekran Görüntüsü
+
+   ![image](https://github.com/mertkarahan955/PetPas/assets/112320373/b5428d78-383d-4fb3-a41f-c581fb248a18)
+
 
 - **Ürün Durumu:**
+ **18/06 tarihinde yüklenecek**
+
+- **Sprint Review:**
+      - Uygulama için protoip tasarımlar tamamlandı, componentler oluşturuldu, sayfa iskeletleri oluşturulmaya başlandı.
+      - Tüm ekip üyelerinin final tarihleriyle sprint 1 çakıştığı için iş dağılımı zaman yoğunluğuna göre ayarlandı.
 
 - **Sprint Retrospective:**
+  - Görev dağılımları ayarlandı.
+  - Toplantılarımzda ekip üyelerinin zaman darlığından dolayı ilk toplantımızda üyelerin uygulamaya hesapladığımız zamandan daha fazla zaman ayırmaları gerektiğini konuştuk.
 
   
 
