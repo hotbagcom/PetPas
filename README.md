@@ -57,7 +57,7 @@
 
 
 - **Sprint board update:**
-## Sprint Board Ekran Görüntüsü
+   Sprint Board Ekran Görüntüsü
 
    ![image](https://github.com/mertkarahan955/PetPas/assets/112320373/b5428d78-383d-4fb3-a41f-c581fb248a18)
 
