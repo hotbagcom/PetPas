@@ -42,6 +42,30 @@
 
  <img width="1036" alt="Screenshot 2023-06-16 at 14 53 41" src="https://github.com/mertkarahan955/PetPas/assets/112320373/c9da9372-4ffa-4fd7-bcf1-61e8103d2788">
 
+--------------------------------------------------------------------------------------------------------------------
+
+# Sprint 1
+
+- **Sprint içinde tamamlanması tahmin edilen puan:** 100
+
+- **Puan tamamlama mantığı:** Üç sprint için hesaplanan Backlog puanı 300'dür. Toplamda 3 sprint olduğundan ötürü her sprint için puan 100 belirlenmiştir.
+
+- **Daily Scrum:** Yaptığımız Daily Scrum toplantılarını "Whatsapp ve Discord" üzerinden gerçekleştirdik.
+
+
+
+
+- **Sprint board update:**
+
+- **Ürün Durumu:**
+
+- **Sprint Retrospective:**
+
+  
+
+
+
+
 
 
   
