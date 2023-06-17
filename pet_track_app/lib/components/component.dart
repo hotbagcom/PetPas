@@ -42,14 +42,14 @@ class ProfileDrawerWidget extends StatelessWidget {
 }
 
 // Kullanıcı profili CardList'i yöneten buton
-class ScrollButtonCard extends StatelessWidget {
+class CardControllerButton extends StatelessWidget {
   final String text;
   final double fontSize;
   final Color? color;
   final Color? textColor;
   final VoidCallback onPressed;
 
-  const ScrollButtonCard({
+  const CardControllerButton({
     Key? key,
     required this.text,
     required this.onPressed,
@@ -65,7 +65,7 @@ class ScrollButtonCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          color: color ?? const Color.fromRGBO(110, 22, 124, 100),
+          color: color ?? const Color.fromARGB(156, 95, 0, 110),
         ),
         height: 49,
         width: 132,

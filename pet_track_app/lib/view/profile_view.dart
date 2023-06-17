@@ -56,11 +56,11 @@ class _ProfileViewState extends State<UserProfileView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  ScrollButtonCard(
+                  CardControllerButton(
                     text: "Hayvanlarım",
                     onPressed: () {},
                   ),
-                  ScrollButtonCard(
+                  CardControllerButton(
                     text: "Gelecek Aşılar",
                     onPressed: () {},
                   )
