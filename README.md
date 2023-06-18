@@ -63,7 +63,8 @@
 
 
 - **Ürün Durumu:**
- **18/06 tarihinde yüklenecek**
+![image](https://github.com/mertkarahan955/PetPas/blob/38ac29ef8507d10fd6fe1c231f08ea045b29e02f/sprin_gorseller/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-06-18%20at%2022.15.06.png)
+![image](https://github.com/mertkarahan955/PetPas/blob/38ac29ef8507d10fd6fe1c231f08ea045b29e02f/sprin_gorseller/Simulator%20Screenshot%20-%20iPhone%2014%20Pro%20Max%20-%202023-06-18%20at%2022.15.06.png)
 
 - **Sprint Review:**
       - Uygulama için protoip tasarımlar tamamlandı, componentler oluşturuldu, sayfa iskeletleri oluşturulmaya başlandı.
