@@ -40,7 +40,7 @@
 
 # Figma Uygulama Görseli
 
- <img width="1036" alt="Screenshot 2023-06-16 at 14 53 41" src="https://github.com/mertkarahan955/PetPas/assets/112320373/c9da9372-4ffa-4fd7-bcf1-61e8103d2788">
+ <img width="1036" alt="Screenshot 2023-06-16 at 14 53 41" src="https://cdn.discordapp.com/attachments/1114283698142060628/1120093539477508107/image.png">
 
 --------------------------------------------------------------------------------------------------------------------
 
