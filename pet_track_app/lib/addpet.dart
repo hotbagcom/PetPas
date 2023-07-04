@@ -2,19 +2,22 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'sign_upcontroller.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'date_picker_example.dart';
+
+
+
 
 void main() {
-  runApp( MyApp());
+  runApp( AddPetPage());
 }
 
 
-class MyApp extends StatelessWidget {
-   MyApp({Key? key});
+class AddPetPage extends StatelessWidget {
+  AddPetPage({Key? key});
 
   SignUpController signUpController = Get.put(SignUpController());
 
@@ -23,9 +26,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Petpass App',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Hayvan ekleme'),
+      home: const MyHomePage(title: 'Hayvan Ekle'),
     );
   }
 }
@@ -94,40 +97,46 @@ class _MyHomePageState  extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                  height: 100,
-                  width: 100,
-                  child:Column(
-                    children: [
-                      InkWell(
-                        child: SizedBox(
-                          child: Column(
-                            children: [
-                              CircleAvatar(
-                                radius: 50, // set the size of the circle avatar
-                                backgroundImage: AssetImage(pickedFile.path),
-                              ),
-                            ],
+                    height: 100,
+                    width: 130,
+                    child:Row(
+                      children: [
+                        const SizedBox(
+                          height: 100,
+                          width: 100,
+                          child:CircleAvatar(
+                            backgroundImage: AssetImage( ''),
+                            radius: 50, // set the size of the circle avatar,
                           ),
                         ),
-                        onTap: (){
-                          print("Camera clicked");
-                          showModalBottomSheet(
-                            context: context,
-                            builder: (context) => bottomSheet(context),
-                          );
-                        },
-                      ),
 
-                    ],
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            InkWell(
+                              child: Icon(Icons.edit),
+                              onTap: (){
+                                print("Camera clicked");
+                                showModalBottomSheet(
+                                  context: context,
+                                  builder: (context) => bottomSheet(context),
+                                );
+                              },
+                            ),
+                          ],
+                        ),
+
+
+                      ],
+                    ),
                   ),
-                ),
 
                 ],
               ),
             ),
             //fotograf ekle
             Padding(
-            padding: const EdgeInsets.only(top: 20.0),
+              padding: const EdgeInsets.only(top: 20.0),
             ),//verileri al textfield
 
             Padding(
@@ -139,8 +148,8 @@ class _MyHomePageState  extends State<MyHomePage> {
                     set_petname(_a);
                   },
                   decoration: InputDecoration(
-                  labelText : "Adı",
-                  border: OutlineInputBorder(),
+                    labelText : "Adı",
+                    border: OutlineInputBorder(),
                   ),
 
                 ),
@@ -166,7 +175,7 @@ class _MyHomePageState  extends State<MyHomePage> {
               padding: const EdgeInsets.symmetric(horizontal: 20.0 , vertical: 8),
               child: SizedBox(
                 height: 35,
-                child: TextFormField( //ırk 
+                child: TextFormField( //ırk
                   onChanged: (_c) {
                     set_pettype(_c);
                   },
@@ -258,6 +267,7 @@ class _MyHomePageState  extends State<MyHomePage> {
                 child: ElevatedButton(
                   onPressed: () {
                     // Firebase'ye ekleme işlemi
+
                   },
                   child: const Text('Ekle'),
                 ),
@@ -281,7 +291,7 @@ class _MyHomePageState  extends State<MyHomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text(
-            "Chose profile photo",
+            "Chose your pet photo",
             style : TextStyle(
                 fontSize :20,
                 fontWeight :FontWeight.bold
@@ -357,8 +367,8 @@ Future<void> takePhoto(ImageSource source) async {
 
   pickedFile = File(pickedImage!.path);
   signUpController.setProfileImagePath(pickedFile.path);
+  print(pickedFile.exists());
 
-  Get.back();
-
-  // print(pickedFile);
+  print(pickedFile.path);
+  print(pickedFile);
 }

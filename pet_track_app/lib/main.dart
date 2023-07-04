@@ -23,9 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Petpass App',
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Hayvan ekleme'),
+      home: const MyHomePage(title: 'Hayvan Listesi'),
     );
   }
 }
@@ -39,7 +39,7 @@ class MyHomePage extends StatefulWidget {
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
-ImagePicker imagePicker =ImagePicker();
+
 
 
 class _MyHomePageState  extends State<MyHomePage> {
